@@ -154,6 +154,15 @@ header a:hover {
         border-radius: 15px;
 }
 
+/*SECCION JUGAR*/
+#jugar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+}
 
 /*SECCION CONTACTO*/
 #contacto {
