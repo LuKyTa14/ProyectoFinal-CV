@@ -1,0 +1,212 @@
+/*DETALLES GENERALES*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 198, 198);
+    margin: 5px;
+    font-family:'Montserrat', sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+
+button {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(50, 55, 86);
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/*ENCABEZADO Y BARRA DE NAVEGACION*/
+header {
+    background-color: rgb(209, 198, 198);
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 2.25em;
+    color: rgb(253, 240, 240);
+    text-align: center;
+    background-color: rgb(87, 83, 83);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    background-color:  rgb(125, 120, 120);
+}
+
+header a{
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: black;
+}
+
+/*SECCION YO*/
+
+#yo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+#yo p{
+    font-size: 2.25em;
+}
+
+/*SECCION MIS CONOCIMIENTOS*/
+#conocimientos {
+    color: white;
+    text-align: center;
+}
+
+#conocimientos .contenedor {
+    padding: 150px 0px;
+    background-color: rgb(125, 120, 120);
+}
+
+#conocimientos h2 {
+    margin: 0;
+    font-size: 2.25em;
+    padding: 25px;
+    color: black;
+}
+
+#conocimientos p {
+    display: none;
+}
+
+#conocimientos h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#conocimientos .bloque1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) )
+        , url(https://www.harvard-deusto.com/sites/default/files/styles/article_front/public/2021-02/30-49-foto-principal.jpg?itok=3O0x7rKy);
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 30px;
+        border-radius: 15px;
+}
+
+#conocimientos .bloque2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) )
+        , url(https://fich.unl.edu.ar/notifich/wp-content/uploads/2021/12/FICH_50_Aniversario-5.jpg);
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 30px;
+        border-radius: 15px;
+}
+
+#conocimientos .bloque3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) )
+        , url(https://experiencia.ticmas.io/wp-content/uploads/2020/12/shutterstock_203185300-e1610916774681.png);
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 30px;
+        border-radius: 15px;
+}
+
+
+/*SECCION CONTACTO*/
+#contacto {
+    display: flex;
+    height: 100vh;
+}
+
+input[type=text], [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    height: 40px;
+    background-color: rgb(209, 198, 198);
+    border: 2px solid black;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px;
+    background-color: rgb(209, 198, 198);
+    border: 2px solid black;
+}
+
+input[type=submit], [type=reset] {
+    padding: 16px 32px;
+    margin: 4px 2px;
+    text-decoration: none;
+    background-color: rgb(107, 101, 101);
+    cursor: pointer;
+    color: white;
+}
+
+
+/*SECCION FOOTER/PIE DE PAGINA*/
+
+footer {
+    margin: 0;
+}
+.piepag {
+    background-color: rgb(87, 83, 83);
+}
+
+#copy {
+    padding: 15px;
+    color: gray;
+    float: right;
+    font-size: 0.8em;
+}
+
+#logo {
+    padding: 8px;
+    height: 60px;
+    width: auto;
+}
