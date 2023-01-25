@@ -27,6 +27,7 @@ button {
     border: 1px solid black;
     background-color: rgb(197,184,76);
     color: white;
+    cursor: pointer;
 }
 
 button:hover {
@@ -43,7 +44,7 @@ header .contenedor{
 
 header .logo {
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: initial;
     margin: 0;
     padding: 15px 20px;
     font-size: 2.25em;
@@ -70,9 +71,20 @@ header a:hover {
 }
 
 @media (min-width:780px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     header nav {
         flex-direction: row;
         align-items: center;
+        padding-right: 25px;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
     }
 }
 
@@ -83,7 +95,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
 }
 
 #yo .soy {
@@ -107,7 +119,7 @@ header a:hover {
 }
 
 #conocimientos .contenedor {
-    padding: 150px 0px;
+    padding: 125px 0px;
     background-color:rgb(160,163,225);
 }
 
