@@ -11,26 +11,26 @@
     
     <header>
         <div class="contenedor">
-            <h1 class="logo">Electronica Fanchin</h1>
+            <h1 class="logo">Lucas Fanchin</h1>
             <nav>
                 <a href="#yo">Quien Soy</a>
                 <a href="#conocimientos">Conocimientos</a>
                 <a href="#jugar">Juguemos</a>
-                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
 
 
     <section id="yo">
-        <p>Hola, soy <br> Lucas Fanchin</p>
-        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="FaceID">
-        <br>
+        <p class="soy">¡¡Hola!! Soy <br> Lucas Fanchin</p>
+        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="FaceID" width="150px" height="auto">
+        <p>Estas son algunas de mis redes sociales</p>
         <div>
             <a href="https://www.instagram.com/luckfan14/"><img src="https://pbs.twimg.com/profile_images/730398192169328640/aN0B-LIm_400x400.jpg" alt="" height="50px" width="auto"></a>
             <a href="https://www.facebook.com/lucas.fanchin.7/"><img src="https://i.pinimg.com/564x/f6/6d/49/f66d49097e18978ddf46282c233040a9.jpg" alt="" height="50px" width="auto"></a>
             <a href="https://github.com/LuKyTa14"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" height="50px" width="auto"></a>
         </div>
+        <p class="contacto">⬆ contáctame ⬆</p>
     </section>
 
     <section id="conocimientos">
@@ -38,63 +38,48 @@
             <h2>Mis conocimientos</h2>
             <div class= "columnas" >
                 <div class="bloque1">
-                    <h3>Curso Academia Ticmas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, provident? Atque porro perferendis sint saepe veritatis blanditiis cupiditate accusantium, omnis aut unde dignissimos neque asperiores aperiam quisquam molestias expedita id.</p>
-                    <button>+info</button>
+                    <h3>Curso Argentina Programa</h3>
+                    <p>Primeros pasos en Front-end - Ticmas Academy. <br> En este curso obtuve los conocimientos necesarios para iniciarme en el desarrollo Front-end, enfocandome en la programación web. </p>
+                    <form action="https://www.argentina.gob.ar/sites/default/files/introduccion_primeros_pasos_en_front-end_-_ticmas_academy.pdf">
+                        <button>+info</button>
+                    </form>
                 </div>
                 <div class="bloque2">
-                    <h3>Estudiante Ing. Informatica</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, provident? Atque porro perferendis sint saepe veritatis blanditiis cupiditate accusantium, omnis aut unde dignissimos neque asperiores aperiam quisquam molestias expedita id.</p>
-                    <button>+info</button>
-                </div>
-                <div class="bloque3">
-                    <h3>Curso Google Activate</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, provident? Atque porro perferendis sint saepe veritatis blanditiis cupiditate accusantium, omnis aut unde dignissimos neque asperiores aperiam quisquam molestias expedita id.</p>
-                    <button>+info</button>
+                    <h3>Estudiante de Ing. Informatica</h3>
+                    <p>Universidad Nacional del Litoral. <br> La ingeniería informática aplica los fundamentos de las ingenierías de sistemas de información, de software, de datos y de inteligencia artificial.</p>
+                    <form action="https://www.unl.edu.ar/carreras/ingenieria-en-informatica/">    
+                        <button>+info</button>
+                    </form>
                 </div>
             </div>
         </div>         
     </section>
 
     <section id="jugar">
-        <h3 id="text">Juguemos un rato con <br> la Pagina</h3>
-        <div>
-            <button class="botonplay" id="elimtext">Prueba este boton</button>
-        </div>    
-        <div>
-            <button class="botonplay" id="colorfondo">Porque no pruebas este?</button>
-            <button class="botonplay" id="colornormal">Reset</button>
-        </div>
-        <div>
-            <button class="botonplay" id="mejorboton">Este es el mejor boton</button>
-            <button class="botonplay" id="botonnormal">Reset</button>
-        </div>
-        <div>
-            <button class="botonplay" id="borrar">Basta de botones</button>
-            <button class="botonplay" id="volverbotones" style="display: none;">Quiero que vuelvan :(</button>
+        <div class="contenedor">
+            <div class="imagenplay"></div>
+            <div class="botones">
+                <h3 id="text">Juguemos un rato con <br> la página</h3>
+                <div>
+                    <button class="botonplay" id="elimtext">Prueba este boton</button>
+                </div>    
+                <div>
+                    <button class="botonplay" id="colorfondo">No pruebes este boton</button>
+                    <button class="botonplay" id="colornormal">Reset</button>
+                </div>
+                <div>
+                    <button class="botonplay" id="mejorboton">Este es el mejor boton</button>
+                    <button class="botonplay" id="botonnormal">Reset</button>
+                </div>
+                <div>
+                    <button class="botonplay" id="borrar">Basta de botones</button>
+                    <button class="botonplay" id="volverbotones" style="display: none;">Quiero que vuelvan :(</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="JS/funciones.js" ></script>
-
-    <section id="contacto">
-        <div class="contenedor">
-            <h2>CONTACTANOS!</h2>
-            <form action="" method="get">
-                    <label>Nombre</label>
-                    <input type="text" name="nombre" placeholder="Igrese su nombre" />
-                    <label>Apellido</label>
-                    <input type="text" name="apellido" placeholder="Igrese su apellido" />
-                    <label>E-mail</label>
-                    <input type="email" name="email" placeholder="Igrese su E-mail" />
-                    <label>Comentario</label>
-                    <textarea id="comentario" name="comentario" placeholder="Escriba su comentario" style="height:200px"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Resetear">
-            </form>
-        </div>
-    </section>
 
     <footer>
         <div class="contenedor">

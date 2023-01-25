@@ -2,31 +2,31 @@
 
 //CAMBIAR TEXTO
 document.getElementById("elimtext").onclick = function () {
-    document.getElementById("text").innerHTML = "Ahora no vas a parar de tocar botones";
+    document.getElementById("text").innerHTML = "Ahora no vas a parar de tocar botones 🙆‍♂️";
     document.getElementById("elimtext").style.display = "none";
 }
 
 
 //CAMBIAR COLORES 
 document.getElementById("colorfondo").onclick = function () {
-    document.body.style.backgroundColor = "rgb(255, 25, 40)";
+    document.body.style.backgroundColor = "rgb(197,184,76)";
 }
 
 document.getElementById("colornormal").onclick = function () {
-    document.body.style.backgroundColor = "rgb(209, 198, 198)";
+    document.body.style.backgroundColor = "rgb(234,231,211)";
 }
 
 //MODIFICAR BOTON
 document.getElementById("mejorboton").onclick = function () {
     document.getElementById("mejorboton").style.backgroundColor = "gold";
     document.getElementById("mejorboton").style.color = "black";
-    document.getElementById("text").innerHTML = "Los botones azules no sirven";
+    document.getElementById("text").innerHTML = "Los botones azules no sirven 😅";
 }
 
 document.getElementById("botonnormal").onclick = function () {
-    document.getElementById("mejorboton").style.backgroundColor = "rgb(0, 9, 65)";
-    document.getElementById("mejorboton").style.color = "white";
-    document.getElementById("text").innerHTML = "Juguemos un rato con <br> la Pagina";
+    document.getElementById("mejorboton").style.backgroundColor = "rgb(160,163,225)";
+    document.getElementById("mejorboton").style.color = "rgb(15,10,175)";
+    document.getElementById("text").innerHTML = "Juguemos un rato con <br> la página";
 }
 
 //QUITAR BOTONES

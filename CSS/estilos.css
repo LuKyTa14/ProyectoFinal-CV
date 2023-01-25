@@ -4,11 +4,12 @@
 }
 
 body {
-    background-color: rgb(209, 198, 198);
-    margin: 5px;
+    background-color: rgb(234,231,211);
+    margin: 0px;
     font-family:'Montserrat', sans-serif;
 
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,54 +25,54 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid black;
-    background-color: rgb(50, 55, 86);
+    background-color: rgb(197,184,76);
     color: white;
 }
 
 button:hover {
-    background-color: black;
+    background-color: rgb(168, 153, 26);
 }
 
 /*ENCABEZADO Y BARRA DE NAVEGACION*/
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(160,163,225)
+}
+
 header .logo {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     margin: 0;
     padding: 15px 20px;
     font-size: 2.25em;
-    color: rgb(253, 240, 240);
+    color: rgb(15,10,175);
     text-align: center;
-    background-color: rgb(87, 83, 83);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 
 header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 1px solid black;
-    background-color:  rgb(125, 120, 120);
 }
 
 header a{
     display: block;
-    color: white;
+    color: black;
     padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
 header a:hover {
-    color: black;
+    color: rgb(199,199,199);
 }
 
-@media (min-width:760px){
+@media (min-width:780px){
     header nav {
         flex-direction: row;
         align-items: center;
-        padding-left: 10px;
     }
 }
 
@@ -82,11 +83,21 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 70vh;
+    height: 90vh;
+}
+
+#yo .soy {
+    font-size: 2.50em;
+    font-weight: unset;
 }
 
 #yo p{
-    font-size: 2.25em;
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+#yo .contacto{
+    font-weight: bold;
 }
 
 /*SECCION MIS CONOCIMIENTOS*/
@@ -97,64 +108,81 @@ header a:hover {
 
 #conocimientos .contenedor {
     padding: 150px 0px;
-    background-color: rgb(125, 120, 120);
+    background-color:rgb(160,163,225);
 }
 
 #conocimientos h2 {
     margin: 0;
-    font-size: 2.25em;
+    font-size: 3.5em;
     padding: 25px;
     color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #conocimientos p {
     display: none;
+    font-size: 1.25em;
 }
 
 #conocimientos h3 {
-    margin: 0;
-    padding: 15px;
-    font-size: 1.2em;
+    margin: 15px;
+    font-size: 1.5em;
     text-align: center;
 }
 
 #conocimientos .bloque1 {
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5) )
-        , url(https://www.harvard-deusto.com/sites/default/files/styles/article_front/public/2021-02/30-49-foto-principal.jpg?itok=3O0x7rKy);
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75) )
+        , url(https://media.ambito.com/p/06fc0f526fccf7b83b992e21d007a04d/adjuntos/239/imagenes/040/294/0040294060/730x0/smart/arg-programajpg.jpg);
         background-position: center center;
         background-size: cover;
         padding: 50px;
         margin: 30px;
         border-radius: 15px;
+        box-shadow: 2px 2px 10px black;
 }
 
 #conocimientos .bloque2 {
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5) )
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75) )
         , url(https://fich.unl.edu.ar/notifich/wp-content/uploads/2021/12/FICH_50_Aniversario-5.jpg);
         background-position: center center;
         background-size: cover;
         padding: 50px;
         margin: 30px;
         border-radius: 15px;
+        box-shadow: 2px 2px 10px black;
 }
 
-#conocimientos .bloque3 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5) )
-        , url(https://experiencia.ticmas.io/wp-content/uploads/2020/12/shutterstock_203185300-e1610916774681.png);
-        background-position: center center;
-        background-size: cover;
-        padding: 50px;
-        margin: 30px;
-        border-radius: 15px;
+@media (min-width:780px){
+        #conocimientos .columnas {
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        #conocimientos p{
+            display: block;
+            margin-bottom: 30px;
+        }
+        
+        #conocimientos h3{
+            margin: 0px;
+        }
+        
+        #conocimientos .bloque1{
+            width: 50%;
+            height: auto;
+        }
+
+        
+        #conocimientos .bloque2{
+            width: 50%;
+            height: auto;
+        }
 }
 
 /*SECCION JUGAR*/
@@ -164,12 +192,12 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 70vh;
+    height: 100vh;
 }
 
 #jugar h3{
     font-size: 2.25em;
-    font-weight: bold;
+    font-weight: unset;
 }
 
 #jugar .botonplay {
@@ -178,52 +206,48 @@ header a:hover {
     padding: 10px 20px;
     border-radius: 10px;
     margin: 10px 0px;
-    border: 1px solid rgb(79, 0, 152);
-    background-color: rgb(0, 9, 65);
-    color: white;
+    border: 1px solid black;
+    background-color: rgb(160,163,225);
+    color: rgb(15,10,175);
 }
 
-/*SECCION CONTACTO*/
-#contacto {
-    display: flex;
-    height: 100vh;
-}
+@media (min-width:780px){
+    #jugar .contenedor{
+        display: flex;
+        justify-content: center;
+    }
 
-input[type=text], [type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px;
-    height: 40px;
-    background-color: rgb(209, 198, 198);
-    border: 2px solid black;
-}
+    #jugar .botones {
+        margin: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #jugar h3{
+        margin: 20px 0px;
+        max-width: 400px;
+    }
 
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    margin: 8px;
-    background-color: rgb(209, 198, 198);
-    border: 2px solid black;
-}
+    #jugar br{
+        display: none;
+    }
 
-input[type=submit], [type=reset] {
-    padding: 16px 32px;
-    margin: 4px 2px;
-    text-decoration: none;
-    background-color: rgb(107, 101, 101);
-    cursor: pointer;
-    color: white;
+    #jugar .imagenplay {
+        background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2021/06/pop-it-II.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 550px;
+        width: 400px;
+    }
 }
-
 
 /*SECCION FOOTER/PIE DE PAGINA*/
-
 footer {
     margin: 0;
 }
 .piepag {
-    background-color: rgb(87, 83, 83);
+    background-color: rgb(199,199,199);
 }
 
 #copy {
