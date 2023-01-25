@@ -95,12 +95,13 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 85vh;
+    height: 95vh;
 }
 
 #yo .soy {
     font-size: 2.50em;
     font-weight: unset;
+    margin: 0px;
 }
 
 #yo p{
@@ -125,7 +126,7 @@ header a:hover {
 
 #conocimientos h2 {
     margin: 0;
-    font-size: 3.5em;
+    font-size: 3em;
     padding: 25px;
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -176,6 +177,10 @@ header a:hover {
             justify-content:space-evenly;
         }
 
+        #conocimientos h2{
+            font-size: 3.5em;
+        }
+
         #conocimientos p{
             display: block;
             margin-bottom: 30px;
@@ -200,16 +205,23 @@ header a:hover {
 /*SECCION JUGAR*/
 #jugar{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
+    align-items: center;
     height: 100vh;
 }
 
 #jugar h3{
-    font-size: 2.25em;
+    font-size: 1.75em;
     font-weight: unset;
+    margin: 20px 50px;
+}
+
+#jugar p{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 20px 50px;
 }
 
 #jugar .botonplay {
@@ -237,7 +249,7 @@ header a:hover {
     }
     
     #jugar h3{
-        margin: 20px 0px;
+        margin: 0px;
         max-width: 400px;
     }
 

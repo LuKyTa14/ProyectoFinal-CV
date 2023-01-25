@@ -20,13 +20,13 @@ document.getElementById("colornormal").onclick = function () {
 document.getElementById("mejorboton").onclick = function () {
     document.getElementById("mejorboton").style.backgroundColor = "gold";
     document.getElementById("mejorboton").style.color = "black";
-    document.getElementById("text").innerHTML = "Los botones azules no sirven 😅";
+    document.getElementById("text").innerHTML = "Los botones azules no sirven";
 }
 
 document.getElementById("botonnormal").onclick = function () {
     document.getElementById("mejorboton").style.backgroundColor = "rgb(160,163,225)";
     document.getElementById("mejorboton").style.color = "rgb(15,10,175)";
-    document.getElementById("text").innerHTML = "Juguemos un rato con <br> la página";
+    document.getElementById("text").innerHTML = "Con JavaScript podemos lograr muchas interacciones con nuestra página";
 }
 
 //QUITAR BOTONES
@@ -37,7 +37,9 @@ document.getElementById("borrar").onclick = function() {
     document.getElementById("mejorboton").style.display = "none";
     document.getElementById("botonnormal").style.display = "none";
     document.getElementById("borrar").style.display = "none";
+    document.getElementById("jugartext").style.display = "none";
     document.getElementById("volverbotones").style.display = "block";
+    document.getElementById("text").innerHTML = "Como vimos estos son algunos potenciales de nuestras páginas web";
 }
 
 document.getElementById("volverbotones").onclick = function() {
@@ -47,7 +49,8 @@ document.getElementById("volverbotones").onclick = function() {
     document.getElementById("mejorboton").style.display = "block";
     document.getElementById("botonnormal").style.display = "block";
     document.getElementById("borrar").style.display = "block";
+    document.getElementById("jugartext").style.display = "flex";
     document.getElementById("volverbotones").style.display = "none";
-    document.getElementById("text").innerHTML = "Juguemos de vuelta";
+    document.getElementById("text").innerHTML = "Con JavaScript podemos lograr muchas interacciones con nuestra página";
 }
 
